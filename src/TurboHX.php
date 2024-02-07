@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use InvalidArgumentException;
 use Laravel\Folio\MountPath;
 use Laravel\Folio\Pipeline\MatchedView;
+use Laravel\Folio\RequestHandler;
 
 class TurboHX extends \Laravel\Folio\FolioManager
 {
