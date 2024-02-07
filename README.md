@@ -13,7 +13,7 @@ That's it!
 
 This package extends [laravel/folio](https://github.com/laravel/folio) to add some extra features like allowing `POST`, `PATCH`,`PUT` and `DELETE` `HTTP` methods, mostly to support using [htmx](https://github.com/bigskysoftware/htmx) or perhaps [alpine](https://github.com/alpinejs/alpine) with a few ajax calls. See <https://github.com/laravel/folio/issues/106>
 
-Also allows for a wilcard file to work in place of an index php. As described here: <https://github.com/laravel/folio/pull/119>
+Also allows for a wilcard file to work in place of an `index.blade.php` file as described here: <https://github.com/laravel/folio/pull/119>
 
 > [!CAUTION]
 > This allows all `HTTP` methods on all folio routes!
