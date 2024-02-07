@@ -4,3 +4,13 @@ parameters:
 			message: "#^Call to an undefined method Pest\\\\PendingCalls\\\\TestCall\\:\\:expect\\(\\)\\.$#"
 			count: 1
 			path: tests/ArchTest.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 5
+			path: tests/MethodTest.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 6
+			path: tests/WildcardIndexTest.php

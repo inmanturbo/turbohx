@@ -29,15 +29,24 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Inmanturbo\\TurboHX\\Tests\\": "tests"
+            "Inmanturbo\\TurboHX\\Tests\\": "tests",
+            "Workbench\\App\\": "workbench/app"
         }
     },
     "scripts": {
-        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "post-autoload-dump": "@composer run prepare",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/pint"
+        "format": "vendor/bin/pint",
+        "build": [
+            "@composer run prepare"
+        ],
+        "start": [
+            "@composer run prepare",
+            "@php ./vendor/bin/testbench serve"
+        ]
     },
     "config": {
         "sort-packages": true,

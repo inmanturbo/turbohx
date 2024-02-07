@@ -2,13 +2,27 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/inmanturbo/turbohx.svg?style=flat-square)](https://packagist.org/packages/inmanturbo/turbohx)[![Total Downloads](https://img.shields.io/packagist/dt/inmanturbo/turbohx.svg?style=flat-square)](https://packagist.org/packages/inmanturbo/turbohx)
 
+Allows you to send `HTTP` `POST`, `PATCH`,`PUT` and `DELETE` requests to your [laravel/folio](https://github.com/laravel/folio) routes.
+
 ## Installation
+
+First install [laravel/folio](https://laravel.com/docs/10.x/folio#installation)
+
+```bash
+composer require laravel folio
+```
+
+```bash
+composer php artisan folio:install
+```
+
+Then install this package
 
 ```bash
 composer require inmanturbo/turbohx
 ```
 
-That's it!
+That's it! Now you can send all types of `HTMX` and `ajax` requests to your [laravel/folio](https://github.com/laravel/folio) routes and handle them directly with your blade files.
 
 ## Usage
 
@@ -19,7 +33,7 @@ Also allows for a wilcard file to work in place of an `index.blade.php` file as 
 > [!CAUTION]
 > This allows all `HTTP` methods on all folio routes!
 
-Currently just replaces `Route::get` with `Route::any`. May be improved in the future to allow more granular control, such as a function similiar to the `name()` function available in folio. `PR`'s welcome!
+`Folio` uses the default `Rout::fallback` method which only supports get requests. This just replaces it with `Route::any` method. May be improved in the future to allow more granular control, such as a function similiar to the `name()` function available in folio. `PR`'s welcome!
 
 ## Testing
 
