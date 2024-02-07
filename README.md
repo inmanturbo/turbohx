@@ -22,7 +22,7 @@ Then install this package
 composer require inmanturbo/turbohx
 ```
 
-That's it! Now you can send all types of `HTMX` and `ajax` requests to your [laravel/folio](https://github.com/laravel/folio) routes and handle them directly with your blade files.
+That's it! Now you can send all types of `HTMX` and `ajax` requests to your [laravel/folio](https://github.com/laravel/folio) routes and handle them directly within your blade files.
 
 ## Usage
 
