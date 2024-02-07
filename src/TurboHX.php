@@ -2,13 +2,9 @@
 
 namespace Inmanturbo\TurboHX;
 
-use Closure;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use InvalidArgumentException;
 use Laravel\Folio\MountPath;
-use Laravel\Folio\Pipeline\MatchedView;
-use Laravel\Folio\RequestHandler;
 
 class TurboHX extends \Laravel\Folio\FolioManager
 {
@@ -36,25 +32,5 @@ class TurboHX extends \Laravel\Folio\FolioManager
         $prefix = rtrim($mountPath->baseUri, '/');
 
         Route::any($prefix.'{any}', $this->handler())->where('any', '.*')->name('laravel-folio');
-    }
-
-    /**
-     * Get the Folio request handler function.
-     */
-    protected function handler(): Closure
-    {
-        return function (Request $request) {
-            $this->terminateUsing = null;
-
-            $mountPaths = collect($this->mountPaths)->filter(
-                fn (MountPath $mountPath) => str_starts_with(mb_strtolower('/'.$request->path()), $mountPath->baseUri)
-            )->all();
-
-            return (new RequestHandler(
-                $mountPaths,
-                $this->renderUsing,
-                fn (MatchedView $matchedView) => $this->lastMatchedView = $matchedView,
-            ))($request);
-        };
     }
 }
