@@ -19,7 +19,7 @@ Also allows for a wilcard file to work in place of an `index.blade.php` file as 
 > [!CAUTION]
 > This allows all `HTTP` methods on all folio routes!
 
-Currently just replaced `Route::get` with `Route::any`. May be improved in the future to allow more granular control, such as a function simiar to the `name()` function available in folio. `PR`'s welcome!
+Currently just replaces `Route::get` with `Route::any`. May be improved in the future to allow more granular control, such as a function simiar to the `name()` function available in folio. `PR`'s welcome!
 
 ## Testing
 
