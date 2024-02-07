@@ -2,7 +2,6 @@
 
 namespace Inmanturbo\TurboHX\Tests;
 
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\View;
 use Inmanturbo\TurboHX\TurboHXServiceProvider;
 use Laravel\Folio\FolioServiceProvider;
