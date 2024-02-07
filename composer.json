@@ -9,11 +9,42 @@
     },
     "authors": [
         {
-            "name": "inmanturbo"
+            "name": "inmanturbo",
+            "email": "inman.turbo@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
+        "php": "^8.1",
+        "illuminate/contracts": "^10.0|^11.0",
         "laravel/folio": "^1.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13.7",
+        "nunomaduro/collision": "^7.10|^8.0",
+        "orchestra/testbench": "^8.17|^9.0",
+        "pestphp/pest": "^2.28",
+        "pestphp/pest-plugin-arch": "^2.5",
+        "pestphp/pest-plugin-laravel": "^2.2"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Inmanturbo\\TurboHX\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {

@@ -11,11 +11,6 @@ class TurboHXServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->app->singleton(FolioManager::class, TurboHX::class);
         $this->app->bind(FolioRouter::class, Router::class);
-
-        $this->mergeConfigFrom(
-            __DIR__.'/../config/turbohx.php',
-            'turbohx'
-        );
     }
 
     public function boot()
