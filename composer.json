@@ -2,6 +2,8 @@
     "name": "inmanturbo/turbohx",
     "type": "library",
     "license": "MIT",
+    "description": "Send HTMX hx-post, put, patch and delete requests to your laravel/folio routes.",
+    "keywords": ["laravel", "routing"],
     "autoload": {
         "psr-4": {
             "Inmanturbo\\TurboHX\\": "src/"

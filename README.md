@@ -1,6 +1,7 @@
 # TurboHX
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/inmanturbo/turbohx.svg?style=flat-square)](https://packagist.org/packages/inmanturbo/turbohx)[![Total Downloads](https://img.shields.io/packagist/dt/inmanturbo/turbohx.svg?style=flat-square)](https://packagist.org/packages/inmanturbo/turbohx)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/inmanturbo/turbohx.svg?style=flat-square)](https://packagist.org/packages/inmanturbo/turbohx)[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/inmanturbo/turbohx/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/inmanturbo/turbohx/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/inmanturbo/turbohx/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/inmanturbo/turbohx/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)[![Total Downloads](https://img.shields.io/packagist/dt/inmanturbo/turbohx.svg?style=flat-square)](https://packagist.org/packages/inmanturbo/turbohx)
 
 Allows you to send `HTTP` `POST`, `PATCH`,`PUT` and `DELETE` requests to your [laravel/folio](https://github.com/laravel/folio) routes.
 
