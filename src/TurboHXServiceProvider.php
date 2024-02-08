@@ -12,24 +12,5 @@ class TurboHXServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->app->singleton(FolioManager::class, TurboHX::class);
         $this->app->bind(FolioRouter::class, Router::class);
-
-        Route::get('/turbo', function () {
-            return 'Hello World';
-        });
-    }
-
-    public function boot()
-    {
-        // foreach (File::glob(base_path('.www').'/[0-9]*', GLOB_ONLYDIR) as $version) {
-        //     $version = basename($version);
-        //     Folio::path(base_path('.www/'.$version))
-        //         ->uri('/v'.$version)
-        //         ->middleware([
-        //             'web',
-        //             'auth:sanctum',
-        //             config('jetstream.auth_session'),
-        //             'verified',
-        //         ]);
-        // }
     }
 }
