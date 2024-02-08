@@ -2,7 +2,6 @@
 
 namespace Inmanturbo\TurboHX;
 
-use Illuminate\Support\Facades\Route;
 use Laravel\Folio\FolioManager;
 use Laravel\Folio\Router as FolioRouter;
 
