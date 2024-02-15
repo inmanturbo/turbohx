@@ -10,7 +10,7 @@ Allows you to send `HTTP` `POST`, `PATCH`,`PUT` and `DELETE` requests to your [l
 First install [laravel/folio](https://laravel.com/docs/10.x/folio#installation)
 
 ```bash
-composer require laravel folio
+composer require laravel/folio
 ```
 
 ```bash
