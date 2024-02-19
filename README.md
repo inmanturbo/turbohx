@@ -14,7 +14,7 @@ composer require laravel/folio
 ```
 
 ```bash
-composer php artisan folio:install
+php artisan folio:install
 ```
 
 Then install this package
